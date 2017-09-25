@@ -1,0 +1,16 @@
+<ion-content scroll="false">
+  <div class="splash-bg"></div>
+  <div class="splash-info">
+    <div class="splash-logo"></div>
+    <div class="splash-intro">
+      {{ 'WELCOME_INTRO' | translate }}
+    </div>
+  </div>
+  <div padding class="signin-buttons">
+    <button ion-button outline class="facebook-signin" (click)="signInWithFacebook()">Sign in with Facebook</button>
+    <button ion-button outline class="google-signin" (click)="signInWithGoogle()">Sign in with Google</button>
+    <button ion-button outline class="twitter-signin" (click)="signInWithTwitter()">Sign in with Twitter</button>
+    <button ion-button outline class="guest-signin" (click)="signInAsGuest()">Sign in as Guest</button>
+    <!-- <button ion-button outline (click)="signOut()">Logout</button> -->
+  </div>
+</ion-content>
